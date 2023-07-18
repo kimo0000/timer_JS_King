@@ -1,0 +1,66 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0,0,0), #f057);
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 50%;
+    padding: 10px;
+    box-shadow: 0 0 4px rgba(0,0,0);
+    text-align: center;
+    display: grid;
+    grid-template: repeat(2, 1fr) / 1fr;
+    gap: 15px;
+    background-color: #fff;
+    border-radius: 12px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: rosybrown;
+}
+
+.btns button {
+    padding: 8px;
+    border-radius: 8px;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #fff;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btns button:hover {
+    opacity: .5;
+}
+
+#start {
+    background-color: green;
+}
+#stop {
+    background-color: red;
+}
+#reset {
+    background-color: blueviolet;
+}
+
+.active {
+    opacity: .5;
+}
+
